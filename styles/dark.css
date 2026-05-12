@@ -1,0 +1,38 @@
+/* Принудительная тёмная тема */
+
+:root.theme-dark {
+    --h1-text-color: #db00ff;
+    --accent-color: #ff0070;
+    --accent-color-opacity: #ff007040;
+    --text-color: #f1b2ce;
+    --text-color-opacity: #f1b2ce40;
+    --bg-color: #000028;
+    --bg-image: url(../images/cover-image-dark.png);
+    --text-accent-color: #000028;
+}
+
+.theme-dark .header__rec {
+    display: inline;
+    color: var(--accent-color, #ff0070);
+}
+
+.theme-dark .header__rec::after {
+    background-color: var(--accent-color, #ff0070);
+    box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
+}
+
+.theme-dark .header__theme-menu-button {
+    color: var(--accent-color, #ff0070);
+}
+
+.theme-dark .header__theme-menu-button:hover {
+    outline: 1px solid var(--accent-color-opacity, #ff007040);
+}
+
+.theme-dark .header__theme-menu-button:focus-visible {
+    border-block-end: 1px solid var(--accent-color, #ff0070);
+}
+
+.theme-dark .header__theme-menu-button_active {
+    border: 1px solid var(--accent-color, #ff0070);
+}
